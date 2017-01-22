@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+  <title>あなたたちは何日目？</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700,400">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<!--Google fontから引っ張ったコード-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!--ここまでは全部ほぼ一緒、「normalize」は「reset.cssの代わりらしい、、何故かは分からん＞＜」-->
+<body>
+  <header class="header">
+    <div class="topimage">
+        <img src="images/today.png" class="today" alt="今日は">
+    </div>
+    <div class="catimage">
+        <img src="images/header-cat.png" class="header-cat" alt="今日は">
+    </div>
+ </header>
+
+
+
+<div class="wrapper">
+ <div class="datewrapper">
+
+
+
+
+
+   <div class="leftdate">
+        <img src="images/fish-left.png" class="fish-left" alt="月日">
+        <script>
+
+      var hiduke=new Date();
+
+      var year = hiduke.getFullYear();
+      var month = hiduke.getMonth()+1;
+      var week = hiduke.getDay();
+      var day = hiduke.getDate();
+
+      var yobi= new Array("日","月","火","水","木","金","土");
+
+      document.write("<span class='getsu'>",month+"月","</span>");
+      document.write("<span class='nichi'>",day+"日","</span>","<br>");
+
+      </script>
+   </div>
+   <div class="rightdate">
+        <img src="images/fish-red.png" class="fish-red" alt="fish-redate">
+        <div class="kazu">
+        <script language="JavaScript" src="http://www.nannichime.net/s.php?d=2016/11/14">
+        </script>
+        </div>
+
+   </div>
+
+   </div>
+ </div>
+<div class="atonannniti"><div class="ato">
+<script language="JavaScript" src="http://www.nannichime.net/s.php?d=2017/5/13">
+</script>
+</div>
+</div>
+
+
+ <div class="nekodarake">
+   <div class="border">
+   </div>
+   <div class="nekoleft">
+      <img src="images/cat-man.png" class="nekosizeleft" alt="男子群">
+ 　</div>
+  <div class="nekoright">
+      <img src="images/cat-woman.png" class="nekosizeright" alt="女子群">
+  </div>
+
+  </div>
+</div>
+
+</body>
+</html>
