@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+html {
+  font-size: 62.5%;
+}
+/**, *::before, *::after {
+  box-sizing:border-box;
+} */
+body {
+ width: 100%;
+  height: auto;
+	font-family:'Raleway',"hiragino kaku gothic ProN", 'Meiryo', sans-serif;
+}
+/*▼▼　必ずどこでも入れよう！！▼▼*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*ーーーーーーここから～headerーーーーーー*/
+.header {
+  width: 100%;
+  height: 140px;
+  background-color: #66cdaa;
+}
+.topimage {
+  width: 40%;
+  height: 40px;
+  margin: 100px 0 0 30px;
+  float: left;
+  background-color: #ffb6c1;
+}
+.today {
+  width: 250px;
+  margin: 0 0 0 30px;
+}
+.catimage {
+  width: 40%;
+  height: 50px;
+  float: right;
+  margin: 81px 30px 0 0;
+}
+.header-cat {
+  width: 170px;
+  height: 130px;
+  margin: -43px 30px 0 100px;
+}
+.header-cat:hover{
+  transform: translateX(-100px);
+  transition: 3s;
+
+}
+.header::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+
+.ato{
+  font-size: 50px;
+  margin: 20px 0 0 40px;
+  text-align: center;
+}
+
+.datewrapper {
+  width: 100%;
+  height: 350px;
+  background-color: #d2b48c;
+}
+.leftdate {
+  width: 54%;
+  height: 300px;
+  float: left;
+  position: absolute;
+  top: 200px;
+}
+.rightdate {
+  width: 36%;
+  height: 300px;
+  float: left;
+  position: absolute;
+  z-index: 0;
+  right: 20px;
+  top: 150px;
+}
+
+.fish-left {
+  width: 85%;
+  height: auto;
+  z-index: 0;
+}
+.fish-red {
+  width: 80%;
+  float: left;
+  margin: 0 0 0 0;
+  z-index: 1;
+}
+.nannichime {
+  position: absolute;;
+  left: 75%;
+  top: 60%;
+  z-index: 2;
+}
+.nan-date {
+  width: 70%;
+}
+.kazu{
+  font-size: 50px;
+  position: absolute;
+  left:30%;
+  top:30%;
+}
+span.getsu{
+  font-size: 50px;
+  display: inline-block;
+  margin: 75px 0 0 30px;
+  position: absolute;
+  left: 13%;
+  z-index: 1;
+  top:0px;
+}
+span.nichi{
+  font-size: 50px;
+  display: inline-block;
+  margin: 75px 0 0 30px;
+  position: absolute;
+  left: 45%;
+  z-index: 1;
+  top: 0px;
+}
+.leftdate:hover,
+.rightdate:hover {
+  animation: translate 3s;
+  animation-iteration-count: 1;
+  -webkit-animation: translate 7s;
+  -webkit-animation-iteration-count: 1;
+  background-image: url('images/logo.png');
+  background-repeat: no-repeat;
+
+
+}
+@keyframes translate {
+  0%   { transform:  translate(0px, 0px);    }
+  25%   { transform:  translate(300px, 0px);   }
+  75%   { transform:  translate(-300px, 0px);   }
+  100%  { transform:  translate(0px, 0px);   }
+}
+@-webkit-keyframes translate {
+  0%   { -webkit-transform:  translate(0px, 0px) ;   }
+  25%   { -webkit-transform:  translate(300px, 0px);   }
+  75%   { -webkit-transform:  translate(-300px, 0px);   }
+  100%  { -webkit-transform:  translate(0px, 0px);   }
+}
+
+
+
+/*.nokoridate {
+  width: 100%;
+  height: 70px;
+}*/
+.nekodarake {
+  width: 100%;
+  height: 245px;
+  position: relative;
+  background-color: #dcdcdc;
+}
+.border {
+  background-color: #ff1493;
+  position: absolute;
+  top: 65%;
+  height: 50px;
+  width: 100%;
+}
+.nekoleft {
+  width: 50%;
+  height: 200px;
+  float: left;
+}
+.nekosizeleft {
+  width: 30%;
+  position: absolute;
+  left: 15%;
+  z-index: 1;
+  top: 15px;
+}
+.nekoright {
+  width: 45%;
+  height: 200px;
+}
+.nekosizeright {
+  width: 30%;
+  position: absolute;
+  float: left;
+  z-index: 1;
+  left: 50%;
+  top: 2px;
+}
+
+.atonannniti{
+  height: 70px;
+}
+.nekodarake:hover{
+    transform: rotateY(180deg);
+  transition: 20s;
+}
+.nekoleft img:hover{
+  transform: rotateY(360deg);
+  transition: 6s;
+}
+.nekoright img:hover{
+  transform: rotateY(-360deg);
+  transition: 6s;
+}
+
+.scale {
+    width: 400px;
+    height: 300px;
+}
+.scale img {
+    -moz-transition: -moz-transform 0.5s linear;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    -o-transition: -o-transform 0.5s linear;
+    -ms-transition: -ms-transform 0.5s linear;
+    transition: transform 0.5s linear;
+}
+.scale img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
